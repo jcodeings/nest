@@ -1,0 +1,270 @@
+/*
+
+COlORS
+
+RED: #730C1A
+BLACK: #0D1821
+WHITE: #F2EFE9
+
+*/
+
+
+/* STYLE.CSS STARTS HERE --- ---- --- --- --- --- STYLE.CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+}
+
+
+/* HEADER STARTS HERE --- ---- --- --- --- --- HEADER/NAVBAR*/
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8px 0 8px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+.logo{}
+
+/* NAVBAR STARTS HERE --- ---- --- --- --- --- NAVBAR/HEADER*/
+.navbar{
+    justify-content: space-evenly;
+}
+.cart{
+    color: #730C1A;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 17px;
+    color: #730C1A;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #730C1A;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+/* ARTICLE STARTS HERE --- ---- --- --- --- --- ARTICLE*/
+article{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 0;
+}
+
+
+/*RED CARD --- ----- --- RED/CARD*/
+.card-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to right, #730C1A, #8c1f2d);
+    border-radius: 30px;
+    width: 100%;
+    height: 620px;
+}
+.card img{
+    border-radius: 24px;
+    margin-left: 40px;
+}
+
+.card-red h1, a, p{
+    color: white;
+}
+
+.card-red div{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 40%;
+}
+.card-red div h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+
+}
+.card-red div p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-red div a{
+    position: relative;
+    font-size: 21px;
+    color: #F2EFE9;
+    font-weight: 600;
+    text-decoration: none;
+}
+.card-red div a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F2EFE9;
+    transition: .3s;
+}
+.card-red div a:hover::before{
+    width: 100%;
+}
+
+
+/* CARD STARTS HERE --- ---- --- --- --- --- BEIGE/CARD*/
+.card-beige{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(to right, #F2EFE9, #e5dfdd);
+    border-radius: 30px;
+    width: 100%;
+    height: 620px;
+    padding: 0 64px 0 64px;
+}
+.card-beige img{
+    border-radius: 24px;
+}
+
+.card-beige-div-left{
+    width: 30%;
+}
+.card-beige-div-left h1{
+    font-size: 65px;
+}
+
+.card-beige-div-right div{
+    text-align: center;
+}
+.card-beige-div-right{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-beige-div-right h2{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.card-beige-div-right p{
+    color: #0D1821;
+    font-size: 19px;
+    margin-bottom: 120px;
+}
+.card-beige-div-right a{
+    color: #0D1821;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.card-beige-div-right .button a{
+    border: 1px solid #0D1821;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+
+/*BLACK CARD --- ----- --- BLACK/CARD*/
+.card-black{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px 0 64px;
+
+    background-image: linear-gradient(to right, #0c1623, #0D1821);
+    border-radius: 30px;
+    width: 100%;
+    height: 620px;
+    color: white;
+}
+
+.card-black-div-left{
+    width: 30%;
+}
+.card-black-div-left h1{
+    font-size: 60px;
+}
+.card-black-div-left p{
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+.card-black-div-right{
+    width: 30%;
+    padding: 22px;
+}
+.card-black-div-right p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+
+/* FOOTER STARTS HERE --- ---- --- --- --- --- FOOTER*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px 8px 0 0;
+    padding: 30px 12px;
+    width: 100%;
+
+    background-color: #0D1821;
+    color: white;
+
+    bottom: 0;
+    left: 0;
+}
+.footer div{
+    padding-bottom: 10px;
+}
+
+.footer a {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin: 8px;
+    text-decoration-skip-ink: all;
+}
+.footer p {
+    font-weight: 200;
+    font-size: 11px;
+}
